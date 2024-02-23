@@ -52,6 +52,8 @@ public class Main {
         "Numero de Documento: " + p2.getNumeroIdentificacion() + " | " + "Correo: " + p2.getCorreoElectronico() + " | " + "Celular" + p2.getCelular() + " | " + "Fecha de nacimiento: " + p2.getFechaNacimiento()
          + " | " + "Altura" + p2.getAltura() + " | " + "Peso" + p2.getPeso() + " | " + "Tipo de Sangre: " + p2.getTipoSangre() + p2.getFactorRH());
 
+         //Consultorio
+
 
     }
 }
