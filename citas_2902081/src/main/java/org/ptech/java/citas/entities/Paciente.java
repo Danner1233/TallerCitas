@@ -2,13 +2,11 @@ package org.ptech.java.citas.entities;
 
 import java.time.LocalDateTime;
 
-public class Paciente {
+import org.ptech.java.citas.entities.Enums.TipoDocumento;
+import org.ptech.java.citas.entities.Enums.TipoSangre;
 
-    private int id;
-    private String nombres;
-    private String apellidos;
-    private TipoDocumento tipoDocumento;
-    private Long numeroIdentificacion;
+public class Paciente extends Usuario {
+
     private String correoElectronico;
     private Long celular;
     private LocalDateTime fechaNacimiento;
@@ -17,19 +15,11 @@ public class Paciente {
     private TipoSangre tipoSangre;
     private char factorRH;
 
-
-    public Paciente() {
-    }
-
-
+    
     public Paciente(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroIdentificacion,
             String correoElectronico, Long celular, LocalDateTime fechaNacimiento, Double altura, Double peso,
             TipoSangre tipoSangre, char factorRH) {
-        this.id = id;
-        this.nombres = nombres;
-        this.apellidos = apellidos;
-        this.tipoDocumento = tipoDocumento;
-        this.numeroIdentificacion = numeroIdentificacion;
+        super(id, nombres, apellidos, tipoDocumento, numeroIdentificacion);
         this.correoElectronico = correoElectronico;
         this.celular = celular;
         this.fechaNacimiento = fechaNacimiento;
@@ -37,47 +27,6 @@ public class Paciente {
         this.peso = peso;
         this.tipoSangre = tipoSangre;
         this.factorRH = factorRH;
-    }
-
-
-
-    public String getNombres() {
-        return nombres;
-    }
-
-
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
-    }
-
-
-    public String getApellidos() {
-        return apellidos;
-    }
-
-
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
-    }
-
-
-    public TipoDocumento getTipoDocumento() {
-        return tipoDocumento;
-    }
-
-
-    public void setTipoDocumento(TipoDocumento tipoDocumento) {
-        this.tipoDocumento = tipoDocumento;
-    }
-
-
-    public Long getNumeroIdentificacion() {
-        return numeroIdentificacion;
-    }
-
-
-    public void setNumeroIdentificacion(Long numeroIdentificacion) {
-        this.numeroIdentificacion = numeroIdentificacion;
     }
 
 
@@ -153,11 +102,6 @@ public class Paciente {
 
     
 
-
-    
-
-    
-    
 
 
     

@@ -1,85 +1,41 @@
 package org.ptech.java.citas.entities;
 
-public class Medico {
+import org.ptech.java.citas.entities.Enums.Especialidad;
+import org.ptech.java.citas.entities.Enums.TipoDocumento;
 
-    //Los atributos de una clase siempre tienen que ser privados
-    private int id;
-    private String nombres;
-    private String apellidos;
-    private TipoDocumento tipoDocumento;
-    private Long numeroIdentificacion;
+public class Medico extends Usuario {
+
     private Long registroMedico;
     private Especialidad especialidad;
 
-
-    public Medico() {
-    }
-
-
     public Medico(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroIdentificacion,
             Long registroMedico, Especialidad especialidad) {
-        this.id = id;
-        this.nombres = nombres;
-        this.apellidos = apellidos;
-        this.tipoDocumento = tipoDocumento;
-        this.numeroIdentificacion = numeroIdentificacion;
+
+            
+        super(id, nombres, apellidos, tipoDocumento, numeroIdentificacion);
         this.registroMedico = registroMedico;
         this.especialidad = especialidad;
     }
 
-    //Getters y Setters deben ser publicos
-    //Firma de un Getter
-    //Tipo de retorno
-    //Nombre del metodo siempre emoieza oir get seguido del nombre y la primera letra va en MAYUSCULA
-    // retorna: valor del atributo
-    //parametro: nada
-    public String getNombres() {
-        return this.nombres;
+    public Medico(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroIdentificacion) {
+        super(id, nombres, apellidos, tipoDocumento, numeroIdentificacion);
     }
 
-    //setter sirve para asignar un valor a un atriburo privado
-    // tipo de dato de retorno es el void
-    //nombre empieza con set seguido del nombre y el inicio del nombre va en MAYUSCULA
-    //Retorna: nada
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public Long getRegistroMedico() {
+        return registroMedico;
     }
 
-
-    public String getApellidos() {
-        return apellidos;
+    public void setRegistroMedico(Long registroMedico) {
+        this.registroMedico = registroMedico;
     }
 
-
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public Especialidad getEspecialidad() {
+        return especialidad;
     }
 
-
-    public TipoDocumento getTipoDocumento() {
-        return tipoDocumento;
+    public void setEspecialidad(Especialidad especialidad) {
+        this.especialidad = especialidad;
     }
 
-
-    public void setTipoDocumento(TipoDocumento tipoDocumento) {
-        this.tipoDocumento = tipoDocumento;
-    }
-
-
-    public Long getNumeroIdentificacion() {
-        return numeroIdentificacion;
-    }
-
-
-    public void setNumeroIdentificacion(Long numeroIdentificacion) {
-        this.numeroIdentificacion = numeroIdentificacion;
-    }
-
-
-    
-
-
-    
-
-    
 }
+
