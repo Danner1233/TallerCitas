@@ -42,9 +42,7 @@ public class Main {
                 System.out.println("procedimiento: " + p);                
                 
         }
-
-
-        System.out.println();
+        
 
 
     }
