@@ -2,7 +2,7 @@ package org.ptech.java.citas.entities;
 
 import org.ptech.java.citas.entities.Enums.TipoDocumento;
 
-public abstract class Usuario {
+public class Usuario {
 
     //Los atributos heredados deben ser protected
     protected int id;
@@ -10,6 +10,12 @@ public abstract class Usuario {
     protected String apellidos;
     protected TipoDocumento tipoDocumento;
     protected Long numeroIdentificacion;
+
+    //Sobreescribir el metodo toString
+
+    public String toString(){
+        return "nombre: "+ this.nombres;
+    }
 
 
     public Usuario(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroIdentificacion) {

@@ -8,6 +8,10 @@ public class Medico extends Usuario {
     private Long registroMedico;
     private Especialidad especialidad;
 
+    //reescribir
+
+    
+
     public Medico(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroIdentificacion,
             Long registroMedico, Especialidad especialidad) {
 
@@ -15,6 +19,11 @@ public class Medico extends Usuario {
         super(id, nombres, apellidos, tipoDocumento, numeroIdentificacion);
         this.registroMedico = registroMedico;
         this.especialidad = especialidad;
+    }
+
+    @Override
+    public String toString() {
+        return "Medico [registroMedico=" + registroMedico + ", especialidad=" + especialidad + "]" + ", nombre: " + super.nombres;
     }
 
     public Medico(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroIdentificacion) {

@@ -39,7 +39,7 @@ public class Main {
 
         for( String p : e.getProcedimientos()){
 
-                System.out.println("procedimiento: " + p);                
+                System.out.println("procedimiento: " + p);
                 
         }
         
