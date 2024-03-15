@@ -2,6 +2,7 @@ package org.ptech.java.citas.entities;
 
 import java.time.LocalDateTime;
 
+import org.ptech.java.citas.entities.Enums.Motivo;
 import org.ptech.java.citas.entities.Enums.TipoDocumento;
 import org.ptech.java.citas.entities.Enums.TipoSangre;
 
@@ -14,6 +15,7 @@ public class Paciente extends Usuario {
     private Double peso;
     private TipoSangre tipoSangre;
     private char factorRH;
+    private Motivo motivo;
 
     
 
@@ -26,9 +28,11 @@ public class Paciente extends Usuario {
     }
 
 
+
+
     public Paciente(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroIdentificacion,
             String correoElectronico, Long celular, LocalDateTime fechaNacimiento, Double altura, Double peso,
-            TipoSangre tipoSangre, char factorRH) {
+            TipoSangre tipoSangre, char factorRH, Motivo motivo) {
         super(id, nombres, apellidos, tipoDocumento, numeroIdentificacion);
         this.correoElectronico = correoElectronico;
         this.celular = celular;
@@ -37,7 +41,10 @@ public class Paciente extends Usuario {
         this.peso = peso;
         this.tipoSangre = tipoSangre;
         this.factorRH = factorRH;
+        this.motivo = motivo;
     }
+
+
 
 
     public String getCorreoElectronico() {
@@ -45,9 +52,13 @@ public class Paciente extends Usuario {
     }
 
 
+
+
     public void setCorreoElectronico(String correoElectronico) {
         this.correoElectronico = correoElectronico;
     }
+
+
 
 
     public Long getCelular() {
@@ -55,9 +66,13 @@ public class Paciente extends Usuario {
     }
 
 
+
+
     public void setCelular(Long celular) {
         this.celular = celular;
     }
+
+
 
 
     public LocalDateTime getFechaNacimiento() {
@@ -65,9 +80,13 @@ public class Paciente extends Usuario {
     }
 
 
+
+
     public void setFechaNacimiento(LocalDateTime fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
+
+
 
 
     public Double getAltura() {
@@ -75,9 +94,13 @@ public class Paciente extends Usuario {
     }
 
 
+
+
     public void setAltura(Double altura) {
         this.altura = altura;
     }
+
+
 
 
     public Double getPeso() {
@@ -85,9 +108,13 @@ public class Paciente extends Usuario {
     }
 
 
+
+
     public void setPeso(Double peso) {
         this.peso = peso;
     }
+
+
 
 
     public TipoSangre getTipoSangre() {
@@ -95,9 +122,13 @@ public class Paciente extends Usuario {
     }
 
 
+
+
     public void setTipoSangre(TipoSangre tipoSangre) {
         this.tipoSangre = tipoSangre;
     }
+
+
 
 
     public char getFactorRH() {
@@ -105,9 +136,28 @@ public class Paciente extends Usuario {
     }
 
 
+
+
     public void setFactorRH(char factorRH) {
         this.factorRH = factorRH;
     }
+
+
+
+
+    public Motivo getMotivo() {
+        return motivo;
+    }
+
+
+
+
+    public void setMotivo(Motivo motivo) {
+        this.motivo = motivo;
+    }
+
+
+    
 
 
     

@@ -3,6 +3,7 @@ package org.ptech.java.citas.entities;
 import java.time.LocalDateTime;
 
 import org.ptech.java.citas.entities.Enums.Especialidad;
+import org.ptech.java.citas.entities.Enums.Motivo;
 import org.ptech.java.citas.entities.Enums.TipoDocumento;
 import org.ptech.java.citas.entities.Enums.TipoSangre;
 
@@ -29,7 +30,7 @@ public abstract class pruebaPolimorfismo {
 
         System.out.println(e.toString());
 
-        Paciente p = new Paciente(14, "Alexix", "Orostegui", TipoDocumento.TI, 7628172871L, "hsauysa@gmail.com", 1878287328L, LocalDateTime.now(), 2.45, 1.12, TipoSangre.O, '+');
+        Paciente p = new Paciente(14, "Alexix", "Orostegui", TipoDocumento.TI, 7628172871L, "hsauysa@gmail.com", 1878287328L, LocalDateTime.now(), 2.45, 1.12, TipoSangre.O, '+', Motivo.GRIPE);
 
         System.out.println(p.toString());
 
