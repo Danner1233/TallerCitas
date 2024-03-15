@@ -13,7 +13,7 @@ public class Enfermero extends Usuario {
 
     @Override
     public String toString() {
-        return "Enfermero [procedimientos=" + procedimientos + "]" + "nombre: " + this.nombres;
+        return "Enfermero: "+ this.nombres + " " + this.apellidos + ", procedimientos: " + procedimientos;
     }
 
     public Enfermero(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroIdentificacion) {

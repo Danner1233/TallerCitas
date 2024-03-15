@@ -20,9 +20,9 @@ public class Paciente extends Usuario {
     
     @Override
     public String toString() {
-        return "Paciente [correoElectronico=" + correoElectronico + ", celular=" + celular + ", fechaNacimiento="
-                + fechaNacimiento + ", altura=" + altura + ", peso=" + peso + ", tipoSangre=" + tipoSangre
-                + ", factorRH=" + factorRH + "]" + this.nombres;
+        return "Paciente: " + this.nombres + " " + this.apellidos + ", correoElectronico: " + correoElectronico + ", celular: " + celular + ", fechaNacimiento: "
+                + fechaNacimiento + ", altura: " + altura + ", peso: " + peso + ", tipoSangre " + tipoSangre
+                + ", factorRH: " + factorRH;
     }
 
 

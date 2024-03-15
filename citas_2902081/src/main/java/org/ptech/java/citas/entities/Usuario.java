@@ -14,7 +14,7 @@ public class Usuario {
     //Sobreescribir el metodo toString
 
     public String toString(){
-        return "nombre: "+ this.nombres;
+        return "Usuario: "+ this.nombres + " " + this.apellidos;
     }
 
 

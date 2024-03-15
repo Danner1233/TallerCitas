@@ -23,7 +23,7 @@ public class Medico extends Usuario {
 
     @Override
     public String toString() {
-        return "Medico [registroMedico=" + registroMedico + ", especialidad=" + especialidad + "]" + ", nombre: " + super.nombres;
+        return "Medico: " + super.nombres + ", registroMedico: " + registroMedico + ", especialidad: " + especialidad;
     }
 
     public Medico(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroIdentificacion) {
